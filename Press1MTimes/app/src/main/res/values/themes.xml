@@ -1,0 +1,32 @@
+<resources>
+    <!--    Splash theme    -->
+    <style name="Theme.Press1MTimes.SplashScreen" parent="Theme.AppCompat.NoActionBar">
+        <!--    Set splash    -->
+        <item name="android:windowBackground">@xml/splash</item>
+
+        <!--    Theme colors    -->
+        <item name="colorAccent">@color/red</item>
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/gray</item>
+
+        <!--    Hide action bar    -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--    Base application theme    -->
+    <style name="Theme.Press1MTimes" parent="Theme.AppCompat.NoActionBar">
+
+        <!--    App Theme   -->
+        <item name="colorAccent">@color/red</item>
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/pale_red</item>
+        <!--    Set action bar color    -->
+        <item name="android:actionBarStyle">@color/gray</item>
+    </style>
+
+    <!--    DialogFragment Animation    -->
+    <style name="Theme.Press1MTimes.Animation">
+        <item name="android:windowEnterAnimation">@anim/breath_in</item>
+        <item name="android:windowExitAnimation">@anim/breath_out</item>
+    </style>
+</resources>

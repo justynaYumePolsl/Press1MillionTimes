@@ -1,0 +1,284 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.merive.press1mtimes"
+4    android:versionCode="54"
+5    android:versionName="2.3.1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:6:5-66
+11-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:6:22-63
+12    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+12-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:8:5-81
+12-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:8:22-78
+13    <uses-permission android:name="android.permission.CAMERA" />
+13-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:10:5-65
+13-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:10:22-62
+14    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+14-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:12:5-88
+14-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:12:22-85
+15    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+15-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:13:5-90
+15-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:13:22-87
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:15:5-67
+16-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:15:22-64
+17
+18    <queries>
+18-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:17:5-19:15
+19        <package android:name="com.google.zxing.client.android" />
+19-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:18:9-67
+19-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:18:18-64
+20    </queries>
+21
+22    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+23    <uses-feature
+23-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:25:5-27:36
+24        android:name="android.hardware.camera"
+24-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:26:9-47
+25        android:required="false" />
+25-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:27:9-33
+26    <uses-feature
+26-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:28:5-30:36
+27        android:name="android.hardware.camera.front"
+27-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:29:9-53
+28        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+28-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:30:9-33
+29    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+30    <uses-feature
+30-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:33:5-35:36
+31        android:name="android.hardware.camera.autofocus"
+31-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:34:9-57
+32        android:required="false" />
+32-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:35:9-33
+33    <uses-feature
+33-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:36:5-38:36
+34        android:name="android.hardware.camera.flash"
+34-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:37:9-53
+35        android:required="false" />
+35-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:38:9-33
+36    <uses-feature
+36-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:39:5-41:36
+37        android:name="android.hardware.screen.landscape"
+37-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:40:9-57
+38        android:required="false" />
+38-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:41:9-33
+39    <uses-feature
+39-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:42:5-44:36
+40        android:name="android.hardware.wifi"
+40-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:43:9-45
+41        android:required="false" />
+41-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:44:9-33
+42
+43    <application
+43-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:21:5-100:19
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.7.0] C:\Users\jusw\.gradle\caches\transforms-3\0c734a8f9451ded3159b05d46fc9a23a\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:extractNativeLibs="false"
+47        android:icon="@mipmap/ic_launcher_default"
+47-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:22:9-51
+48        android:label="@string/app_name"
+48-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:23:9-41
+49        android:roundIcon="@mipmap/ic_launcher_default_round"
+49-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:24:9-62
+50        android:testOnly="true"
+51        android:theme="@style/Theme.Press1MTimes" >
+51-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:25:9-50
+52        <activity
+52-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:26:9-35:20
+53            android:name="com.merive.press1mtimes.activities.SplashActivity"
+53-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:27:13-54
+54            android:exported="true"
+54-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:28:13-36
+55            android:screenOrientation="portrait"
+55-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:29:13-49
+56            android:theme="@style/Theme.Press1MTimes.SplashScreen" >
+56-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:30:13-67
+57            <intent-filter>
+57-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:31:13-34:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:32:17-69
+58-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:32:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:33:17-77
+60-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:33:27-74
+61            </intent-filter>
+62        </activity>
+63
+64        <activity-alias
+64-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:83:9-95:26
+65            android:name="com.merive.press1mtimes.Million"
+65-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:84:13-35
+66            android:enabled="false"
+66-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:85:13-36
+67            android:exported="true"
+67-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:86:13-36
+68            android:icon="@mipmap/ic_launcher_million"
+68-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:87:13-55
+69            android:label="@string/app_name"
+69-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:88:13-45
+70            android:roundIcon="@mipmap/ic_launcher_million_round"
+70-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:89:13-66
+71            android:targetActivity="com.merive.press1mtimes.activities.SplashActivity" >
+71-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:90:13-64
+72            <intent-filter>
+72-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:31:13-34:29
+73                <action android:name="android.intent.action.MAIN" />
+73-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:32:17-69
+73-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:32:25-66
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:33:17-77
+75-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:33:27-74
+76            </intent-filter>
+77        </activity-alias>
+78        <activity-alias
+78-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:69:9-81:26
+79            android:name="com.merive.press1mtimes.Short"
+79-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:70:13-33
+80            android:enabled="false"
+80-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:71:13-36
+81            android:exported="true"
+81-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:72:13-36
+82            android:icon="@mipmap/ic_launcher_short"
+82-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:73:13-53
+83            android:label="@string/app_name"
+83-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:74:13-45
+84            android:roundIcon="@mipmap/ic_launcher_short_round"
+84-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:75:13-64
+85            android:targetActivity="com.merive.press1mtimes.activities.SplashActivity" >
+85-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:76:13-64
+86            <intent-filter>
+86-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:31:13-34:29
+87                <action android:name="android.intent.action.MAIN" />
+87-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:32:17-69
+87-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:32:25-66
+88
+89                <category android:name="android.intent.category.LAUNCHER" />
+89-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:33:17-77
+89-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:33:27-74
+90            </intent-filter>
+91        </activity-alias>
+92
+93        <activity
+93-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:37:9-51:20
+94            android:name="com.merive.press1mtimes.activities.MainActivity"
+94-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:38:13-52
+95            android:exported="true"
+95-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:39:13-36
+96            android:screenOrientation="portrait"
+96-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:40:13-49
+97            android:theme="@style/Theme.Press1MTimes" >
+97-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:41:13-54
+98            <intent-filter>
+98-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:43:13-50:29
+99                <action android:name="android.intent.action.VIEW" />
+99-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:44:17-69
+99-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:44:25-66
+100
+101                <category android:name="android.intent.category.DEFAULT" />
+101-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:46:17-76
+101-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:46:27-73
+102                <category android:name="android.intent.category.BROWSABLE" />
+102-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:47:17-78
+102-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:47:27-75
+103
+104                <data android:scheme="press1mtimes" />
+104-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:49:17-55
+104-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:49:23-52
+105            </intent-filter>
+106        </activity>
+107        <activity
+107-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:53:9-61:20
+108            android:name="com.merive.press1mtimes.activities.FinishActivity"
+108-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:54:13-54
+109            android:exported="true"
+109-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:55:13-36
+110            android:screenOrientation="portrait"
+110-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:56:13-49
+111            android:theme="@style/Theme.Press1MTimes" >
+111-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:57:13-54
+112            <intent-filter>
+112-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:58:13-60:29
+113                <category android:name="android.intent.category.DEFAULT" />
+113-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:46:17-76
+113-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:46:27-73
+114            </intent-filter>
+115        </activity>
+116        <activity
+116-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:63:9-67:63
+117            android:name="com.merive.press1mtimes.activities.ScannerActivity"
+117-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:64:13-55
+118            android:stateNotNeeded="true"
+118-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:65:13-42
+119            android:theme="@style/zxing_CaptureTheme"
+119-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:66:13-54
+120            android:windowSoftInputMode="stateAlwaysHidden" />
+120-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:67:13-60
+121
+122        <receiver
+122-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:97:9-99:40
+123            android:name="com.merive.press1mtimes.receivers.NotificationReceiver"
+123-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:98:13-59
+124            android:exported="false" />
+124-->D:\Studia\MIM\Press1MTimes-main\app\src\main\AndroidManifest.xml:99:13-37
+125
+126        <provider
+126-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+127            android:name="androidx.startup.InitializationProvider"
+127-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+128            android:authorities="com.merive.press1mtimes.androidx-startup"
+128-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+129            android:exported="false" >
+129-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+130            <meta-data
+130-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+131                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+131-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+132                android:value="androidx.startup" />
+132-->[androidx.emoji2:emoji2:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+133            <meta-data
+133-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jusw\.gradle\caches\transforms-3\8eef53d9995d138e5396bc0361630197\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+134                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+134-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jusw\.gradle\caches\transforms-3\8eef53d9995d138e5396bc0361630197\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+135                android:value="androidx.startup" />
+135-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\jusw\.gradle\caches\transforms-3\8eef53d9995d138e5396bc0361630197\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+136        </provider>
+137
+138        <uses-library
+138-->[androidx.window:window:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+139            android:name="androidx.window.extensions"
+139-->[androidx.window:window:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+140            android:required="false" />
+140-->[androidx.window:window:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+141        <uses-library
+141-->[androidx.window:window:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+142            android:name="androidx.window.sidecar"
+142-->[androidx.window:window:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+143            android:required="false" />
+143-->[androidx.window:window:1.0.0] C:\Users\jusw\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+144
+145        <activity
+145-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:47:9-53:63
+146            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+146-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:48:13-74
+147            android:clearTaskOnLaunch="true"
+147-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:49:13-45
+148            android:screenOrientation="sensorLandscape"
+148-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:50:13-56
+149            android:stateNotNeeded="true"
+149-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:51:13-42
+150            android:theme="@style/zxing_CaptureTheme"
+150-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:52:13-54
+151            android:windowSoftInputMode="stateAlwaysHidden" />
+151-->[com.journeyapps:zxing-android-embedded:4.2.0] C:\Users\jusw\.gradle\caches\transforms-3\5f41c5ff16569d7fe3897dbe88953c00\transformed\zxing-android-embedded-4.2.0\AndroidManifest.xml:53:13-60
+152    </application>
+153
+154</manifest>

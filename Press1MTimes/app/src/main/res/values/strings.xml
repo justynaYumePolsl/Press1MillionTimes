@@ -1,0 +1,59 @@
+<resources>
+    <!--  MainActivity  -->
+    <string name="app_name">Press1MTimes</string>
+
+    <!--  FinishActivity  -->
+    <string name="finish">Finish Press1MTimes</string>
+    <string name="congratulations">Congratulations,\nyou completed Press1MTimes!</string>
+    <string name="hope">I hope you enjoyed it</string>
+
+    <!--  SettingsFragment  -->
+    <string name="settings">Settings</string>
+    <string name="vibration">Vibration</string>
+    <string name="notification">Notification</string>
+    <string name="animation">Animation</string>
+    <string name="splash">Splash</string>
+
+    <!-- OptionsFragment -->
+    <string name="options">Options</string>
+    <string name="options_tip">Tip\nHold down the button to get information</string>
+    <string name="options_tip_reset">Tip\nUse Reset button for reset counter</string>
+    <string name="options_tip_score_share">Tip\nUse ScoreShare button for share or get score</string>
+    <string name="options_tip_icons">Tip\nUse Icons button for change application icon</string>
+    <string name="options_tip_splash">Tip\nUse Splash button for change splash position</string>
+
+    <!-- ResetFragment -->
+    <string name="reset">Reset</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- ScoreShareFragment -->
+    <string name="scoreshare">ScoreShare</string>
+    <string name="scan">Scan QR</string>
+    <string name="qr_error">QR-Code cannot be scanning</string>
+    <string name="score_changed">Press1MTimes Score was changed</string>
+
+    <!-- IconsFragment -->
+    <string name="icons">Icons</string>
+    <string name="default_icon">Default</string>
+    <string name="short_icon">Short</string>
+    <string name="million_icon">Million</string>
+    <string name="icon_changed">Application icon was changed</string>
+
+    <!-- UpdateFragment -->
+    <string name="update">Update</string>
+    <string name="download">Download</string>
+
+    <!--  SplashMessageFragment  -->
+    <string name="splash_message">Splash Message</string>
+    <string name="splash_position_changed">Splash Position was changed</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+
+    <!-- Website Link -->
+    <string name="link">https://merive.herokuapp.com/P1MT</string>
+
+    <string name="error">Something went wrong!</string>
+
+    <!-- TODO -->
+    <string name="todo">TODO</string>
+</resources>

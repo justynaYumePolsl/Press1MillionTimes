@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_update"
+    android:layout_width="342sp"
+    android:layout_height="204sp"
+    android:layout_gravity="center"
+    android:background="@xml/background"
+    android:minWidth="342sp"
+    android:minHeight="204sp">
+
+    <TextView
+        android:id="@+id/update_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:fontFamily="@font/odibee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/update"
+        android:textAllCaps="true"
+        android:textColor="@color/red"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/update_title_separator"
+        android:layout_width="0sp"
+        android:layout_height="12sp"
+        android:layout_marginLeft="36sp"
+        android:layout_marginRight="36sp"
+        android:layout_marginBottom="12sp"
+        android:src="@xml/line"
+        app:layout_constraintBottom_toTopOf="@+id/update_version_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/update_version_title"
+        android:layout_width="0sp"
+        android:layout_height="28sp"
+        android:layout_marginLeft="32sp"
+        android:layout_marginTop="28sp"
+        android:layout_marginRight="32sp"
+        android:fontFamily="@font/odibee"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_title" />
+
+    <Button
+        android:id="@+id/update_download_button"
+        android:layout_width="0sp"
+        android:layout_height="56sp"
+        android:layout_marginStart="64sp"
+        android:layout_marginTop="16sp"
+        android:layout_marginEnd="64sp"
+        android:background="@xml/background"
+        android:fontFamily="@font/odibee"
+        android:padding="12sp"
+        android:singleLine="true"
+        android:stateListAnimator="@null"
+        android:text="@string/download"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/update_version_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
